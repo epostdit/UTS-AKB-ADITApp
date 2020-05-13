@@ -16,17 +16,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val homeFragment = HomeFragment()
+
+        val ic_home = HomeFragment()
         val ic_activity = ActivityFragment()
         val ic_gallery = GalleryFragment()
+        val ic_music_video = MusikFragment()
+        val ic_account = AccountFragment()
 
-        makeCurrentFragment(homeFragment)
+        makeCurrentFragment(ic_home)
 
         bottom_nav.setOnNavigationItemReselectedListener {
             when (it.itemId){
-                R.id.ic_home -> makeCurrentFragment(homeFragment)
+                R.id.ic_home -> makeCurrentFragment(ic_home)
                 R.id.ic_activity -> makeCurrentFragment(ic_activity)
                 R.id.ic_photo -> makeCurrentFragment(ic_gallery)
+                R.id.ic_music_video -> makeCurrentFragment(ic_music_video)
+                R.id.ic_account -> makeCurrentFragment(ic_account)
         }
             true
         }
@@ -37,4 +42,5 @@ class MainActivity : AppCompatActivity() {
             replace(R.id.fl_wrapper, fragment)
             commit()
         }
+
 }
