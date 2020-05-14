@@ -6,10 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.amandahinchman_dominguez.recyclerviews.ListAdapter
-import com.example.appadit.R
+import androidx.recyclerview.widget.ListAdapter
 import kotlinx.android.synthetic.main.fragment_activity.*
+
 
 data class Movie(val title: String, val year: Int, val image: String)
 
@@ -26,15 +25,20 @@ class ActivityFragment : Fragment() {
         Movie("Kick-Ass", 2010, "kickass.jpg")
     )
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? =
         inflater.inflate(R.layout.fragment_activity, container, false)
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        list_recycler_view.layoutManager = LinearLayoutManager(activity)
-        list_recycler_view.adapter = ListAdapter(nicCageMovies)
-
+        list_recycler_view.apply {
+            list_recycler_view.layoutManager = LinearLayoutManager(activity)
+            list_recycler_view.adapter = ListAdapter(nicCageMovies)
+        }
     }
 }

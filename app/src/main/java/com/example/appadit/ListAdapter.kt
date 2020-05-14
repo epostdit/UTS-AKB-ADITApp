@@ -1,11 +1,15 @@
-package com.example.amandahinchman_dominguez.recyclerviews
+package com.example.appadit
 
+import android.media.Image
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appadit.Movie
 import com.example.appadit.R
+import kotlinx.android.synthetic.main.list_item.view.*
+import kotlinx.android.synthetic.main.list_item.view.image as image1
 
 class ListAdapter(private val list: List<Movie>)
     : RecyclerView.Adapter<MovieViewHolder>() {
@@ -27,17 +31,16 @@ class ListAdapter(private val list: List<Movie>)
 class MovieViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
     RecyclerView.ViewHolder(inflater.inflate(R.layout.list_item, parent, false)) {
     private var mTitleView: TextView? = null
-    private var mYearView: TextView? = null
+    private var mImageView: ImageView? = null
 
 
     init {
-        mTitleView = itemView.findViewById(R.id.list_title)
-        mYearView = itemView.findViewById(R.id.list_description)
+        mImageView = itemView.findViewById(R.id.image)
+        mTitleView = itemView.findViewById(R.id.judul)
     }
 
     fun bind(movie: Movie) {
         mTitleView?.text = movie.title
-        mYearView?.text = movie.year.toString()
     }
 
 }
