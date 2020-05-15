@@ -69,9 +69,9 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="105dp"
-            android:layout_marginRight="105dp"
-            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="173dp"
+            android:layout_marginRight="173dp"
+            android:layout_marginBottom="200dp"
             android:src="@drawable/lokasi" />
 
         <ImageView
@@ -81,10 +81,23 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="155dp"
-            android:layout_marginRight="155dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginRight="106dp"
             android:layout_marginBottom="2dp"
             android:src="@drawable/email" />
+
+        <TextView
+            android:id="@+id/findMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="163dp"
+            android:layout_marginLeft="163dp"
+            android:layout_marginBottom="192dp"
+            android:text="Location"
+            android:textColor="@color/cardview_light_background" />
     </RelativeLayout>
 
 </FrameLayout>
