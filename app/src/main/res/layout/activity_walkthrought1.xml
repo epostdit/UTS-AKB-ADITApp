@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg3"
+    android:background="@drawable/bg5"
     tools:context=".walkthrought1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,5 +32,28 @@
             android:layout_marginRight="16dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="239dp"
+        android:layout_height="144dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="159dp"
+        android:src="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="307dp"
+        android:gravity="center_horizontal"
+        android:text="Hello... Aplikasi ini bertujuan untuk memberitahu tentang saya dan juga aktivitas keseharian saya"
+        android:textAlignment="center"
+        android:textSize="14sp" />
 
 </RelativeLayout>

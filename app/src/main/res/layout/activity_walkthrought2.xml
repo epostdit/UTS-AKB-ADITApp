@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg3"
+    android:background="@drawable/bg5"
     tools:context=".walkthrought2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -44,4 +44,26 @@
             android:layout_marginRight="304dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="231dp"
+        android:layout_height="136dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="162dp"
+        android:src="@drawable/computer" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="304dp"
+        android:gravity="center_horizontal"
+        android:text="Aplikasi ini bisa menambah teman dan lebih jauh mengenalinya"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
 </RelativeLayout>

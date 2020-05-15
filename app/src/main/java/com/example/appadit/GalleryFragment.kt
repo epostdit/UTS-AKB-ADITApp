@@ -12,19 +12,19 @@ import kotlinx.android.synthetic.main.fragment_gallery.*
 import kotlinx.android.synthetic.main.fragment_musik.*
 
 
-data class Gallery(val title: String, val year: Int, val image: Int)
+data class Gallery(val image: Int)
 
 class GalleryFragment : Fragment() {
 
     private val nicCageGallery = listOf(
-        Gallery("Raising Arizona", 1987, R.drawable.bg1),
-        Gallery("Vampire's Kiss", 1988,  R.drawable.bg1),
-        Gallery("Con Air", 1997,  R.drawable.bg1),
-        Gallery("Face/Off", 1997,  R.drawable.bg1),
-        Gallery("National Treasure", 2004,  R.drawable.bg1),
-        Gallery("The Wicker Man", 2006,  R.drawable.bg1),
-        Gallery("Bad Lieutenant", 2009,  R.drawable.bg1),
-        Gallery("Kick-Ass", 2010,  R.drawable.bg1)
+        Gallery( R.drawable.adit1),
+        Gallery(R.drawable.adit2),
+        Gallery(R.drawable.adit3),
+        Gallery(R.drawable.adit4),
+        Gallery(R.drawable.adit5),
+        Gallery(R.drawable.adit6),
+        Gallery(R.drawable.adit7),
+        Gallery(R.drawable.bg1)
     )
 
 

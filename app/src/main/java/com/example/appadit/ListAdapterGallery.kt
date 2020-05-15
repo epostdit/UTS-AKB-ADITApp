@@ -25,20 +25,14 @@ class   ListAdapterGallery(private val list: List<Gallery>)
 
 class GalleryViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
     RecyclerView.ViewHolder(inflater.inflate(R.layout.list_item_gallery, parent, false)) {
-    private var mTitleView: TextView? = null
-    private var mYearView: TextView? = null
     private var mImageView: ImageView? = null
 
 
     init {
-        mTitleView = itemView.findViewById(R.id.judul)
-        mYearView = itemView.findViewById(R.id.desc)
         mImageView = itemView.findViewById(R.id.image)
     }
 
     fun bind(musik: Gallery) {
-        mTitleView?.text = musik.title
-        mYearView?.text = musik.year.toString()
         mImageView?.setImageResource(musik.image)
     }
 

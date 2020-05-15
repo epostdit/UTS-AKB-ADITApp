@@ -10,19 +10,18 @@ import androidx.recyclerview.widget.ListAdapter
 import kotlinx.android.synthetic.main.fragment_activity.*
 
 
-data class Movie(val title: String, val year: Int, val image: String)
+data class Movie(val judul: String, val image: Int)
 
 class ActivityFragment : Fragment() {
 
     private val nicCageMovies = listOf(
-        Movie("Raising Arizona", 1987, "raising_arizona.jpg"),
-        Movie("Vampire's Kiss", 1988, "vampires_kiss.png"),
-        Movie("Con Air", 1997, "con_air.jpg"),
-        Movie("Face/Off", 1997, "face_off.jpg"),
-        Movie("National Treasure", 2004, "national_treasure.jpg"),
-        Movie("The Wicker Man", 2006, "wicker_man.jpg"),
-        Movie("Bad Lieutenant", 2009, "bad_lieutenant.jpg"),
-        Movie("Kick-Ass", 2010, "kickass.jpg")
+        Movie("Setiap bangun tidur atau subuh berangkat kepasar untung mengirim barang", R.drawable.dagang),
+        Movie("membantu bisnis orang tua dirumah atau dipasar", R.drawable.dagang),
+        Movie("Pergi kekampus jika ada kelas", R.drawable.ss),
+        Movie("Mengerjakan Tugas", R.drawable.ss),
+        Movie("Touring bareng teman 2 Bulan 1x atau 1 Bulan 1x ke luar Kota jika hari libur", R.drawable.turing),
+        Movie("Bermain Drum jika waktu sudah sore dan sedang santai",  R.drawable.adit7),
+        Movie("Bermain game jika tugas sudah selesai", R.drawable.game)
     )
 
 

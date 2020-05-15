@@ -11,19 +11,19 @@ import kotlinx.android.synthetic.main.fragment_activity.*
 import kotlinx.android.synthetic.main.fragment_musik.*
 
 
-data class Musik(val title: String, val year: Int, val image: Int)
+data class Musik(val title: String, val desc: String, val image: Int)
 
 class MusikFragment : Fragment() {
 
     private val nicCageMusik = listOf(
-        Musik("Raising Arizona", 1987, R.drawable.bg1),
-        Musik("Vampire's Kiss", 1988,  R.drawable.bg1),
-        Musik("Con Air", 1997,  R.drawable.bg1),
-        Musik("Face/Off", 1997,  R.drawable.bg1),
-        Musik("National Treasure", 2004,  R.drawable.bg1),
-        Musik("The Wicker Man", 2006,  R.drawable.bg1),
-        Musik("Bad Lieutenant", 2009,  R.drawable.bg1),
-        Musik("Kick-Ass", 2010,  R.drawable.bg1)
+        Musik("Avenged Sevenfold", "Save me", R.drawable.a7x),
+        Musik("Avenged Sevenfold", "Almost Easy",  R.drawable.a7x),
+        Musik("Avenged Sevenfold", "So Far Away",  R.drawable.a7x),
+        Musik("Avenged Sevenfold", "Beast and The Harlot",  R.drawable.a7x),
+        Musik("One Ok Rock", "The Beginning",  R.drawable.onokrock),
+        Musik("One Ok Rock", "Takking Off",  R.drawable.onokrock),
+        Musik("One Ok Rock", "Let's take it's someday",  R.drawable.onokrock),
+        Musik("One Ok Rock", "Answer is near",  R.drawable.onokrock)
     )
 
 

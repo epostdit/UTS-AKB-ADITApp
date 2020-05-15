@@ -30,17 +30,18 @@ class ListAdapter(private val list: List<Movie>)
 
 class MovieViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
     RecyclerView.ViewHolder(inflater.inflate(R.layout.list_item, parent, false)) {
-    private var mTitleView: TextView? = null
+    private var mJudulView: TextView? = null
     private var mImageView: ImageView? = null
 
 
     init {
         mImageView = itemView.findViewById(R.id.image)
-        mTitleView = itemView.findViewById(R.id.judul)
+        mJudulView = itemView.findViewById(R.id.judul)
     }
 
     fun bind(movie: Movie) {
-        mTitleView?.text = movie.title
+        mJudulView?.text = movie.judul
+        mImageView?.setImageResource(movie.image)
     }
 
 }
