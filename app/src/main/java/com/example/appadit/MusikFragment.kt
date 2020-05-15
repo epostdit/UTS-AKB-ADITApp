@@ -1,4 +1,11 @@
 package com.example.appadit
+/*
+Tanggal Pengerjaan  : 13-05-2020
+Nim                 : 10117141
+Nama                : Aditya
+Kelas               : IF4
+
+ */
 
 import android.os.Bundle
 import android.view.LayoutInflater

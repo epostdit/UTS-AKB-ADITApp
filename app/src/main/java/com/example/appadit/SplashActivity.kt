@@ -1,4 +1,11 @@
 package com.example.appadit
+/*
+Tanggal Pengerjaan  : 06-05-2020
+Nim                 : 10117141
+Nama                : Aditya
+Kelas               : IF4
+
+ */
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

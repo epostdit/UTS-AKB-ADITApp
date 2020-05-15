@@ -1,5 +1,11 @@
 package com.example.appadit
+/*
+Tanggal Pengerjaan  :09-05-2020
+Nim                 : 10117141
+Nama                : Aditya
+Kelas               : IF4
 
+ */
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
